@@ -1,0 +1,167 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "coffee-shop url",
+    "collectionId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+    "dateExported": "2024-06-19T23:50:59.477Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5ce6f58c-2eb0-42da-a06e-5245802b5ac6",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "récuperer la liste des utilisateurs",
+            "url": "http://localhost:3000/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-19T21:53:04.730Z",
+            "modified": "2024-06-19T21:53:08.963Z",
+            "headers": []
+        },
+        {
+            "_id": "f1f2910d-8b24-4e00-908d-8b0bb341491e",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "récuperer la liste des cafés disponibles",
+            "url": "http://localhost:3000/coffee",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-19T21:53:42.994Z",
+            "modified": "2024-06-19T21:53:51.697Z",
+            "headers": []
+        },
+        {
+            "_id": "a0c8f2e1-a4b4-42cc-8c97-ad08b871efe3",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "ajouter un utilisateur",
+            "url": "http://localhost:3000/users",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-19T21:54:17.643Z",
+            "modified": "2024-06-19T21:58:18.644Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"email\": \"gaeta@gmail.com\",\n  \"password\": \"1234\",\n  \"role\": \"admin\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2be22f2a-cea1-4cee-aadc-1fcb062b69f5",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "ajouter un café",
+            "url": "http://localhost:3000/coffee",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-06-19T21:54:59.270Z",
+            "modified": "2024-06-19T22:58:55.887Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Espresso\",\n  \"description\": \"Café noir\",\n  \"price\": \"7\",\n  \"quantity\": \"5\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdhZXRhQGdtYWlsLmNvbSIsImlhdCI6MTcxODgzNzgzMiwiZXhwIjoxNzE4ODQxNDMyfQ.DrQAg7w1lq-HeQhrRLG9IGyKUUdvIe2W28lqdt7csso"
+            }
+        },
+        {
+            "_id": "11fd6386-3f75-4761-92ba-bf45d6bda19a",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "s'authentifier",
+            "url": "http://localhost:3000/auth/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-06-19T21:56:10.600Z",
+            "modified": "2024-06-19T22:13:37.755Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"email\": \"gaeta@gmail.com\",\n  \"password\": \"1234\"\n  \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "18e8b3b8-ce1f-45fa-b465-03520111488c",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "supprimer un utilisateur",
+            "url": "http://localhost:3000/users/id",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-06-19T22:00:21.795Z",
+            "modified": "2024-06-19T22:01:16.551Z",
+            "headers": []
+        },
+        {
+            "_id": "fb5a53dd-799c-4d52-b972-e09ac4000786",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "mettre à jour utilisateur",
+            "url": "http://localhost:3000/users/8",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-06-19T22:01:43.916Z",
+            "modified": "2024-06-19T22:02:54.931Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"awi@gmail.com\",\n  \"password\": \"1234\",\n  \"role\": \"user\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "58e5a814-617a-45d5-90d4-ea6a556a2335",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "recupérer utilisateur par id",
+            "url": "http://localhost:3000/users/id",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-06-19T22:05:49.912Z",
+            "modified": "2024-06-19T22:06:03.752Z",
+            "headers": []
+        },
+        {
+            "_id": "58f992ab-deab-4e6d-8d68-87b7f1ad30e3",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "supprimer un caffé",
+            "url": "http://localhost:3000/coffee/1",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-06-19T22:09:08.800Z",
+            "modified": "2024-06-19T22:37:29.914Z",
+            "headers": []
+        },
+        {
+            "_id": "56c32f7b-1062-4a85-b3fc-3bad85d50b4d",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "mettre à jour info caffé",
+            "url": "http://localhost:3000/coffee/id",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-06-19T22:10:19.717Z",
+            "modified": "2024-06-19T22:10:38.623Z",
+            "headers": []
+        },
+        {
+            "_id": "3112daf9-864a-487d-976d-181c4171f77e",
+            "colId": "37c0ea18-2852-45c9-8c00-bb285d0eecf8",
+            "containerId": "",
+            "name": "récuperer caffé par id",
+            "url": "http://localhost:3000/coffee/1",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-06-19T22:11:22.515Z",
+            "modified": "2024-06-19T22:12:22.454Z",
+            "headers": []
+        }
+    ],
+    "ref": "AedHVl2KD8GnQkhVQj5reLHDbH02QXnEqkdS0DSKiM7fQ3T6INgLoqF8steq3LjQwvEze6dOHks3POvxMMipNQ"
+}
